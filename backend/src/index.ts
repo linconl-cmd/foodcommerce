@@ -49,8 +49,16 @@ app.get('/orders/:id', async (req: Request, res: Response) => {
   res.send(order)
 })
 
+// interface CheckoutRequest extends Request {
+//   body: {
+//     cart
+//     customer
+//     payment
+//   } 
+// }
+
 app.post('/checkout', async (req: Request, res: Response) => {
-  const 
+  const { cart, customer, payment } = req.body
     
 })
 
